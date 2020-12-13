@@ -1,7 +1,35 @@
 const fs = require('fs')
 const data = require('./data.json')
 //create
-exports.post = (req,res) => {
+
+
+ const { age, date } = require('./utils')
+
+ //show
+
+ exports.show = (req,res) => {
+    
+    const { id } = req.params
+
+    const foudInstructor = data.instructors.find((instructor) => {
+        return instructor.id == id
+    })
+
+    if(!foudInstructor) return res.send("Instructor not found")
+
+    const instructor = {
+        ...foudInstructor,
+        age:age(foudInstructor.birth),
+        services: foudInstructor.services.split(","),
+        created_at:Intl.DateTimeFormat("pt-BR").format(foudInstructor.created_at),
+    }
+
+    return res.render("instructors/show", { instructor })
+ }
+
+//create
+
+ exports.post = (req,res) => {
     
     const keys = Object.keys(req.body)
  
@@ -42,8 +70,31 @@ exports.post = (req,res) => {
     
     
  }
+//edit
+exports.edit = (req,res) => {
+    
+    const { id } = req.params
 
+    const foudInstructor = data.instructors.find((instructor) => {
+        return instructor.id == id
+    })
+
+    if(!foudInstructor) return res.send("Instructor not found")
+    
+
+    
+    const instructor = {
+        ...foudInstructor,
+        birth: date(foudInstructor.birth),
+    }
+  
+
+
+
+    return res.render("instructors/edit", {instructor})
+}
 //udpate
 
 
 //delete
+

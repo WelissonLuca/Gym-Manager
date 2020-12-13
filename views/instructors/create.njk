@@ -6,69 +6,14 @@
 
 {% block content %}
 <form class="card" method="POST" action="/instructors"> 
-    <section class="avatar">
+    <section class="avatar"style="background: url(https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80) no-repeat center center / cover">
 
     </section>
 
     <section class="details">
         <h3>Novo Instrutor</h3>
         
-          <div class="item">
-            <div>Avatar</div>
-            <div>
-                <input 
-                type="url" 
-                name="avatar_url"
-                placeholder="htpp:://">
-            </div>
-        </div>
-
-        <div class="item">
-            <div>Instructor</div>
-            <div>
-                <input 
-                type="text" 
-                name="name"
-                placeholder="Nome do instrutor">
-            </div>
-        </div>
-
-         <div class="item">
-            <div>Data de nascimento</div>
-            <div>
-            <input 
-            type="date" 
-            name="birth"></div>
-        </div>
-
-         <div class="item">
-            <div>Sexo</div>
-            <div>
-                <span>
-                <input 
-                type="radio" 
-                name="gender" 
-                value="M" 
-                checked>Masculino</span>
-                <span>
-                <input 
-                type="radio" 
-                name="gender" v
-                alue="F">Feminino</span>
-            </div>
-        </div>
-
-         <div class="item">
-            <div>Área de atuação</div>
-            <div>
-               <input 
-               type="text" 
-               name="services"
-               placeholder="Separe os serviços prestados por virgula">
-                </div>
-        </div>
-
-       <button type="submit">Salvar</button>
+       {% include 'instructors/fields.njk'%}
     </section>
 </form>
 
