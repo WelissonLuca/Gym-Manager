@@ -1,40 +1,77 @@
 {
-  "instructors": [
+  "members": [
     {
-      "avatar_url": "htpp://sadsada.com",
-      "birth": 890524800000,
-      "created_at": 1607732177026,
       "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1576921876279-4e1b7304015d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "name": "Steve Glosson",
+      "email": "Steve17@hotmail.com",
+      "birth": 885168000000,
       "gender": "M",
-      "services": "sadad",
-      "name": "WELISSON LUCA DE ASSUNCAO VILAR"
+      "blood": "AB-",
+      "weight": "64",
+      "height": "172"
     },
     {
-      "avatar_url": "htpp://sadsada.coms",
-      "birth": 890524800000,
-      "created_at": 1607732187184,
       "id": 2,
-      "gender": "F",
-      "services": "sadad,sdsd,dsds",
-      "name": "WELISSON LUCA DE ASSUNCAO VILAR"
+      "avatar_url": "https://images.unsplash.com/photo-1547852356-b20668106c51?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "name": "Larissa mattar",
+      "email": "Lari@Gymmanager.com",
+      "birth": 999043200000,
+      "gender": "M",
+      "blood": "B-",
+      "weight": "58",
+      "height": "162"
     },
     {
       "id": 3,
-      "avatar_url": "htpp://sadsada.coms",
-      "name": "WELISSON LUCA DE ASSUNCAO VILAR",
-      "birth": 890524800000,
+      "avatar_url": "https://images.unsplash.com/photo-1598575468023-85b93d887c3f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1403&q=80",
+      "name": "Gustavo Scarp",
+      "email": "Guscarp@gmail.com",
+      "birth": -2663452800000,
       "gender": "M",
-      "services": "sadad",
-      "created_at": 1607732459807
+      "blood": "AB-",
+      "weight": "78",
+      "height": "172"
     },
     {
       "id": 4,
-      "avatar_url": "htpp://sadsada.com",
-      "name": "Blblblblb",
-      "birth": 914112000000,
-      "gender": "on",
-      "services": "Blblbl,KAKSKSKS,WWWWW",
-      "created_at": 1607830547880
+      "avatar_url": "https://images.unsplash.com/photo-1590556409454-198422ea5d54?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "name": "Sayuri sasaky",
+      "email": "sasaky@jobs.com",
+      "birth": 1104364800000,
+      "gender": "M",
+      "blood": "A+",
+      "weight": "56",
+      "height": "160"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "name": "Fernanda Hickman",
+      "birth": 706320000000,
+      "gender": "F",
+      "services": "CrossFit, Natação",
+      "created_at": 1608219960268
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1584952449180-f8fddc0b03a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "name": "Marcelo Strong",
+      "birth": 651024000000,
+      "gender": "M",
+      "services": "Natação, Musculação, MMA",
+      "created_at": 1608220084654
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1576511420003-e33641629f94?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "name": "Gilberto Falcão",
+      "birth": 363916800000,
+      "gender": "M",
+      "services": "Fisiculturismo, CrossFit, KickBox",
+      "created_at": 1608220154494
     }
   ]
 }

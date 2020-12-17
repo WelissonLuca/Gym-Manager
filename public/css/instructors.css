@@ -1,4 +1,7 @@
-.card{
+
+
+
+.card {
     background-color: #fff;
     width: 800px;
     min-height: 400px;
@@ -7,58 +10,63 @@
     grid-template-columns: repeat(2, 1fr);
     box-shadow: 0 2px 6px -2px #333;
     animation: up 500ms ease-out;
-    
-    
+
+
 }
 
-@keyframes up{
-    0%{
+@keyframes up {
+    0% {
         transform: translateY(20px);
         opacity: 0;
     }
 
-  
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
 /* Details */
 
-.details{
+.details {
     padding: 32px;
 
 }
-.details .item{
-    border-bottom:1px solid rgba(0, 0, 0, 0.1) ;
+
+.details .item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 16px 0;
 
 }
-.details .item:last-child{
+
+.details .item:last-child {
     border: none;
 }
 
 
-.details h3,.details .item div:nth-child(1){
+.details h3,
+.details .item div:nth-child(1) {
     font-size: 14px;
     line-height: 24px;
     color: #777;
     letter-spacing: 0.7px;
     font-weight: 400;
 }
-.details .item div:nth-child(2){
+
+.details .item div:nth-child(2) {
     color: #555;
     font-weight: bold;
     font-size: 18px;
 
 }
-.details h3{
+
+.details h3 {
     text-transform: uppercase;
     font-weight: bold;
     color: var(--primary-color);
 }
 
-.details .item span{
+.details .item span {
     display: inline-block;
     margin-top: 8px;
     margin-right: 4px;
@@ -73,7 +81,7 @@
 
 
 /* Form */
-input {
+input, select {
     width: 100%;
     outline: none;
     color: #555;
@@ -81,15 +89,19 @@ input {
     font-size: 18px;
 
 }
+
 input[type="radio"] {
     width: initial;
     margin-right: 4px;
 }
-input::placeholder{
+
+input::placeholder {
     font-size: 16px;
     font-weight: normal;
 }
-button[type="submit"],a.button{
+
+button,
+a.button {
     padding: 8px 32px;
     background: var(--primary-color);
     color: #fff;
@@ -97,10 +109,96 @@ button[type="submit"],a.button{
     margin-top: 16px;
     width: 100%;
     font-size: 16px;
-    
+
+
 }
-a.button{
+
+a.button {
     display: block;
     text-align: center;
     text-decoration: none;
 }
+
+#form-delete button[type="submit"] {
+    margin-top: 8px;
+    background-color: #da2626;
+
+}
+
+/* INDEX */ 
+.table-container {
+    display: block;
+    padding: 40px;
+    
+}
+
+.table-container table{
+    border-spacing: 0;
+
+}
+
+.table-container thead{
+    text-align: left;
+}
+
+td, th{
+    padding: 16px;
+    border-bottom: 1px solid #d9d9d9;
+
+
+}
+th {
+    text-transform: uppercase;
+    color: #777;
+    font-size: 14px;
+}
+tbody tr:last-child td{
+    border-bottom: none;
+}
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+tbody tr td:first-child span{
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 3px 1px 6px -4px #000;
+    border: 2px solid #fff;
+}
+
+tbody td:last-child  a,
+.table-container > a{
+    background: var(--primary-color);
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.table-container > a{
+    margin-bottom: 16px;
+    display: inline-block;
+}
+.table-container thead tr th:last-child,
+td:last-child{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

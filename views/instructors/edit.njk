@@ -1,21 +1,33 @@
 {% extends 'layout.njk' %}
 
 {% block headstyle %}
-<link rel="stylesheet" href="/css/instructors.css">
+    <link rel="stylesheet" href="/css/instructors.css">
 {% endblock headstyle %}
 
 {% block content %}
-<form class="card" method="POST" action="/instructors"> 
-    <section class="avatar">
 
-    </section>
+    <div class="card">
 
-    <section class="details">
-        <h3>Editar Instrutor</h3>
-        {% include 'instructors/fields.njk' %}
-        
-    </section>
-</form>
+        <section class="avatar"></section>
 
+        <form method="POST" action="/instructors?_method=PUT">
+
+            <section class="details">
+                <h3>Editar Instrutor</h3>
+                {% include 'instructors/fields.njk' %}
+
+                <input type="hidden" name="id" value={{instructor.id}}>
+
+            </form>
+
+            <form id="form-delete" action="/instructors?_method=DELETE" method="post">
+                <input type="hidden" name="id" value={{instructor.id}}>
+
+                <button type="submit">Deletar</button>
+            </form>
+
+        </section>
+    <script src="/scripts/formDelete.js"></script>
+    </div>
 
 {% endblock content %}

@@ -1,48 +1,41 @@
 {% extends 'layout.njk' %}
 
 {% block headstyle %}
-<link rel="stylesheet" href="/css/instructors.css">
+    <link rel="stylesheet" href="/css/instructors.css">
 {% endblock headstyle %}
 
 {% block content %}
-<div class="card"> 
-    <section class="avatar"   style="background: url(https://source.unsplash.com/collection/79934547) no-repeat center center / cover";
-    >
+    <div class="card table-container">
+        <a href="/instructors/create">Novo</a>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Instructor</th>
+                    <th>Atendimento</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
 
-    </section>
+            <tbody>
+                {% for instructor in instructors%}
+                    <tr>
+                       
+                           <td>
+                              <span style="background:url({{instructor.avatar_url}}) center center / cover">  </span>
+                               {{instructor.name}}</td>
+                           
+                        <td>{{instructor.services}}</td>
+                        <td>
+                            <a href="/instructors/{{instructor.id}}">ver</a>
+                        </td>
 
-    <section class="details">
-        <h3>Detalhes</h3>
+                    </tr>
 
-        <div class="item">
-            <div>Instructor</div>
-            <div>Guilherme Saraiva</div>
-        </div>
+                {% endfor %}
 
-         <div class="item">
-            <div>Idade</div>
-            <div>29</div>
-        </div>
+            </tbody>
 
-         <div class="item">
-            <div>Sexo</div>
-            <div>Masculino</div>
-        </div>
-
-         <div class="item">
-            <div>Acompanhamento</div>
-            <div>
-                <span>Musculação</span>
-                <span>Crossfit</span>
-                </div>
-        </div>
-
-         <div class="item">
-            <div>Desde</div>
-            <div>12/08/2018</div>
-        </div>
-    </section>
-</div>
-
+        </table>
+    </div>
 
 {% endblock content %}
