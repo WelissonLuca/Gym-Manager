@@ -1,6 +1,6 @@
 const express = require("express");
 const nunjucks = require("nunjucks");
-const routes = require("./routes");
+const routes = require("../src/routes");
 const methodOverride = require("method-override");
 
 const server = express();
@@ -13,7 +13,7 @@ server.use(express.static("public"));
 server.use(methodOverride("_method"));
 server.use(routes);
 
-nunjucks.configure("views", {
+nunjucks.configure("src/app/views", {
     express: server,
     autoescape: false,
     noCache: true,

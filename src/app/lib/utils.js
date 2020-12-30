@@ -1,6 +1,6 @@
 /* Formatação Data */
 module.exports = {
-  age: function age(timestamp) {
+  age(timestamp) {
     const today = new Date();
     const birtDate = new Date(timestamp);
 
@@ -13,7 +13,7 @@ module.exports = {
     return age;
   },
 
-  date: (timestamp) => {
+  date (timestamp) {
     const date = new Date(timestamp);
 
     const year = date.getUTCFullYear();
@@ -27,7 +27,8 @@ module.exports = {
       month,
       year,
       iso:`${year}-${month}-${day}`,
-      birthDay: `${day}/${month}`
+      birthDay: `${day}/${month}`,
+      format:`${day}-${month}-${year}`
     };
   },
 };
